@@ -9,7 +9,7 @@ import (
 var (
 	Session *discordgo.Session
 )
-//Main bot
+//Main bot operations
 func init() {
 	bot, err := discordgo.New("Bot " + config.Token)
 	if err != nil {
