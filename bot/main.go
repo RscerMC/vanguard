@@ -1,15 +1,15 @@
 package bot
 
 import (
-	"vanguard/config"
-
+	"github.com/RscerMC/vanguard/config"
 	"github.com/bwmarrin/discordgo"
 )
 
 var (
 	Session *discordgo.Session
 )
-//Main bot operations
+
+// Main bot operations
 func init() {
 	bot, err := discordgo.New("Bot " + config.Token)
 	if err != nil {

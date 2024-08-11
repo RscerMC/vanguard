@@ -5,8 +5,8 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"vanguard/config"
 
+	"github.com/RscerMC/vanguard/config"
 	"github.com/redis/go-redis/v9"
 )
 

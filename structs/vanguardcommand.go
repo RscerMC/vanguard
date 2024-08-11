@@ -1,12 +1,11 @@
 package structs
 
 import (
-	"vanguard/config"
-
+	"github.com/RscerMC/vanguard/config"
 	"github.com/bwmarrin/discordgo"
 )
 
-type Quixbocommand struct {
+type Vanguardcommand struct {
 	Command       *discordgo.ApplicationCommand
 	Usage         string
 	DeveloperOnly bool
@@ -15,7 +14,7 @@ type Quixbocommand struct {
 	RunCMD func(s *discordgo.Session, i *discordgo.InteractionCreate) error
 }
 
-func (c *Quixbocommand) Run(s *discordgo.Session, i *discordgo.InteractionCreate) error {
+func (c *Vanguardcommand) Run(s *discordgo.Session, i *discordgo.InteractionCreate) error {
 	if c.DeveloperOnly && i.Member.User.ID != config.DeveloperID {
 		return errorEmbed(s, i, "You are not the developer")
 	}

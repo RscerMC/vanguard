@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"os"
 	"os/signal"
-	"vanguard/bot"
-	"vanguard/common"
+
+	"github.com/RscerMC/vanguard/bot"
+	"github.com/RscerMC/vanguard/common"
 )
 
 func init() {

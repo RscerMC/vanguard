@@ -1,4 +1,4 @@
-module vanguard
+module github.com/RscerMC/vanguard
 
 go 1.22.4
 
